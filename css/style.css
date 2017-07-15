@@ -745,7 +745,8 @@ h5 {
     text-transform: uppercase
 }
 
-b i:last-child, b i:nth-last-child(2) {
+b i:last-child, b i:nth-last-child(6), b i:nth-last-child(5), b i:nth-last-child(4),
+b i:nth-last-child(3), b i:nth-last-child(2) {
     color: #337ab7 !important;
 }
 
