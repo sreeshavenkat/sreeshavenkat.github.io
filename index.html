@@ -262,6 +262,37 @@
     .edu-honors { display: flex; flex-wrap: wrap; gap: 0.5rem; }
     .honor-tag { font-size: 0.78rem; font-weight: 600; padding: 0.28rem 0.75rem; border-radius: 20px; background: var(--amber-lt); color: var(--amber); border: 1px solid #f0d090; }
 
+
+    /* ── RESEARCH ── */
+    .research-card {
+      background: white; border: 1.5px solid var(--border); border-radius: 16px;
+      padding: 2rem 2.2rem; display: flex; gap: 1.8rem; align-items: flex-start; flex-wrap: wrap;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .research-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.07); transform: translateY(-2px); }
+    .research-icon { font-size: 2.2rem; flex-shrink: 0; }
+    .research-venue {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--terra); background: var(--terra-lt); border: 1px solid rgba(196,98,45,0.2);
+      padding: 0.22rem 0.7rem; border-radius: 20px; margin-bottom: 0.7rem;
+    }
+    .research-title {
+      font-family: var(--serif); font-weight: 700; font-size: 1.15rem;
+      color: var(--ink); margin-bottom: 0.5rem; line-height: 1.3;
+    }
+    .research-authors { font-size: 0.82rem; color: var(--muted); margin-bottom: 0.9rem; line-height: 1.6; }
+    .research-authors strong { color: var(--ink); font-weight: 700; }
+    .research-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.75; margin-bottom: 1.1rem; }
+    .research-link {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.82rem; font-weight: 700; color: var(--terra);
+      text-decoration: none; padding: 0.4rem 1rem; border-radius: 20px;
+      background: var(--terra-lt); border: 1.5px solid rgba(196,98,45,0.25);
+      transition: background 0.2s, color 0.2s;
+    }
+    .research-link:hover { background: var(--terra); color: white; }
+
     /* ── CONTACT ── */
     #contact { padding-bottom: 100px; }
     .contact-box {
@@ -378,6 +409,7 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#beyond">Beyond Code</a></li>
+      <li><a href="#research">Research</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a class="nav-resume" href="https://drive.google.com/file/d/12hiVouNx7dCKGcxAE4a6mCXkxHXXNudJ/view?usp=sharing" target="_blank">↓ Resume</a></li>
     </ul>
@@ -665,6 +697,32 @@
 
 <hr class="section-divider"/>
 
+<!-- RESEARCH -->
+<div class="container">
+  <section id="research">
+    <div class="section-header">
+      <h2 class="section-title">Research & <em>Writing</em></h2>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">📄</div>
+      <div>
+        <div class="research-venue">ICER '17 · ACM · Pages 56–64</div>
+        <div class="research-title">Taking Advantage of Scale by Analyzing Frequent Constructed-Response, Code Tracing Wrong Answers</div>
+        <div class="research-authors">
+          Kristin Stephens-Martinez, An Ju, Krishna Parashar, Regina Ongowarsito, Nikunj Jain,
+          <strong>Sreesha Venkat</strong>, Armando Fox
+        </div>
+        <p class="research-desc">
+          Explores how wrong answers at scale — from large CS courses — can be systematically analyzed to reveal common student misconceptions in code tracing. By clustering frequent incorrect constructed responses, instructors can identify and address gaps in understanding far more efficiently than manual review allows.
+        </p>
+        <a href="https://dl.acm.org/doi/10.1145/3105726.3106180" target="_blank" class="research-link">↗ View on ACM Digital Library</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<hr class="section-divider"/>
+
 <!-- CONTACT -->
 <div class="container">
   <section id="contact">
@@ -687,6 +745,10 @@
         <a href="https://www.linkedin.com/in/sreesha-v-528579b3" class="contact-link" target="_blank">
           <span class="contact-link-icon" style="font-size:0.75rem;font-weight:800;color:white;">in</span>
           LinkedIn
+        </a>
+        <a href="https://github.com/sreeshavenkat" class="contact-link" target="_blank">
+          <span class="contact-link-icon">⌥</span>
+          GitHub
         </a>
         <a href="https://drive.google.com/file/d/12hiVouNx7dCKGcxAE4a6mCXkxHXXNudJ/view?usp=sharing" target="_blank" class="contact-link">
           <span class="contact-link-icon">📄</span>
